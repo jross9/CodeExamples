@@ -14,7 +14,7 @@ namespace WFApp
         {
             InitializeComponent();
 
-            for (int i = 1; i < 50; i++)
+            for (int i = 1; i <= 50; i++)
             {
                 this.lvItems.Items.Add("Item " + i);
             }
@@ -31,7 +31,7 @@ namespace WFApp
 		{
 			base.OnResize(e);
 
-			this.lvItems.Columns[0].Width = lvItems.Width - SystemInformation.VerticalScrollBarWidth - 5;
+			this.lvItems.Columns[0].Width = this.lvItems.Width - SystemInformation.VerticalScrollBarWidth - 5;
 		}
 	}
 }
